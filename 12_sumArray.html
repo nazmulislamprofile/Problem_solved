@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumArray</title>
+</head>
+<body>
+    <script>
+        function sumArray(array){
+           let result= array.reduce((previous,current)=>{
+                return previous+current;
+            },0)
+            document.write(result);
+        }
+        array=[1,2,4,5];
+        sumArray(array);
+    </script>
+</body>
+</html>

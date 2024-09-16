@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findFirstEvenNumber</title>
+</head>
+<body>
+    <script>
+        function findFirstEvenNumber(arr){
+            for(let i=0;i<arr.length;i++){
+                if(arr[i]%2===0){
+                    document.write(arr[i]);
+                    console.log(arr[i]);
+                    break;
+                }
+            }
+        }
+        let arr=[1,2,3,4,5,6,8,9,10];
+        findFirstEvenNumber(arr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Point Distance</title>
+</head>
+<body>
+    
+    <h1 id="myId"></h1>
+
+    <script>
+        input="0 0 3 4";
+        let data=input.split(/\s+/);
+        let x1=parseFloat(data[0]);
+        let y1=parseFloat(data[1]);
+        let x2=parseFloat(data[2]);
+        let y2=parseFloat(data[3]);
+
+        let dx=x2-x1;
+        let dy=y2-y1;
+        let result= Math.sqrt(dx*dx+dy*dy);
+        console.log("Distance: "+result.toFixed(2));
+        document.getElementById("myId").innerText="Distance: "+result.toFixed(2);
+    </script>
+
+    
+
+</body>
+</html>

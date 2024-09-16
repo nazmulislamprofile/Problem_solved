@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeFirstElement</title>
+</head>
+<body>
+    <script>
+
+        function removeFirstElement(array){
+            return array.slice(3);
+        }
+        let array=[1,2,3,4,6,7,8]
+       let result= removeFirstElement(array)
+       document.write(result);//4,6,7,8
+       document.write("<br>",array);//main array have no change 1,2,3,4,6,7,8
+    </script>
+</body>
+</html>

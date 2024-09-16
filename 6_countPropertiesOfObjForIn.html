@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countProperties</title>
+</head>
+<body>
+    <script>
+        function countProperties(obj){
+            let count=0;
+            for(let key in obj){
+                if(obj.hasOwnProperty(key)){
+                    count++;
+                }
+            }
+            return count;
+        }
+        const propertyCount=countProperties({a:1,b:2,c:3});
+        document.write(propertyCount);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumArrayElements</title>
+</head>
+<body>
+    <script>
+        function sumArrayElements(arr){
+            let sum=0;
+            for(let value of arr){
+                sum+=value;
+            }
+            return sum;
+        }
+        let arr=[1,2,3,4,5];
+       const arraySum= sumArrayElements(arr);
+       document.write(arraySum);
+       console.log(arraySum);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printObjectProperties</title>
+</head>
+<body>
+    <script>
+        function printObjectProperties(obj){
+            for(let key in obj){
+                if(obj.hasOwnProperty(key)){
+                    document.write(`${key}:${obj[key]}<br>`);
+                    //console.console.log(`${key}:${obj[key]}<br>`);
+                    
+                }
+            }
+        }
+        const obj={name:"john",age:30,city:"new york"};
+        printObjectProperties(obj);
+    </script>
+</body>
+</html>
