@@ -1,8 +1,8 @@
 function sortAlphabetically(array) {
-      array.sort()  
+    return  array.slice().sort() 
     
 }
 
-let array=[20,34,21,234,234,26];
+let array=["alpha","belgium","walton","alben"];
 let result=sortAlphabetically(array);
 console.log(result);
