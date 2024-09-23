@@ -1,7 +1,7 @@
 function main (input) {
     let str=input.split("");
     let reversedStr=str.reverse();
-    console.log(reversedStr.join(""));
+    console.log(parseInt(reversedStr.join("")));
 }
-let input="123456"
+let input="1300"
 main(input);
